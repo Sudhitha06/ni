@@ -1,0 +1,60 @@
+Here’s the complete and clean *TypeScript program* for function parameter and return types 👇
+
+---
+
+typescript
+// Function with number parameters and number return type
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+// Function with string parameters and string return type
+function greet(name: string): string {
+  return `Hello, ${name}!`;
+}
+
+// Function with boolean parameter and void return type
+function checkStatus(isActive: boolean): void {
+  if (isActive) {
+    console.log("Status: Active");
+  } else {
+    console.log("Status: Inactive");
+  }
+}
+
+// Function with optional parameter
+function multiply(a: number, b?: number): number {
+  return b ? a * b : a * 1; // default to 1 if b is undefined
+}
+
+// Function with default parameter
+function power(base: number, exponent: number = 2): number {
+  return base ** exponent;
+}
+
+// Arrow function with types
+const divide = (x: number, y: number): number => x / y;
+
+// Calling the functions
+console.log("Add:", add(10, 20));
+console.log(greet("Alice"));
+checkStatus(true);
+console.log("Multiply:", multiply(5));
+console.log("Power:", power(3));
+console.log("Divide:", divide(20, 4));
+
+/*
+Steps to Run:
+1. Save this file as 2b.ts
+2. Compile it using:  tsc 2b.ts
+3. Run using:         node 2b.js
+
+Output:
+Add: 30
+Hello, Alice!
+Status: Active
+Multiply: 5
+Power: 9
+Divide: 5
+*/
+

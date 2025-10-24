@@ -1,0 +1,43 @@
+Here’s your clean and complete *TypeScript program (2e.ts)* showing the working of *Namespaces and Modules* 👇
+
+---
+
+typescript
+// Namespace example
+namespace MathUtils {
+  export function add(a: number, b: number): number {
+    return a + b;
+  }
+
+  export function subtract(a: number, b: number): number {
+    return a - b;
+  }
+}
+
+// Using the namespace
+console.log("Namespace Add:", MathUtils.add(10, 5));
+console.log("Namespace Subtract:", MathUtils.subtract(10, 5));
+
+// -------------------------------
+// Module example (Separate file-based structure)
+// -------------------------------
+// File: calculator.ts
+// export function multiply(a: number, b: number): number {
+//   return a * b;
+// }
+
+// File: main.ts
+// import { multiply } from "./calculator";
+// console.log("Module Multiply:", multiply(4, 5));
+
+/*
+Steps to Run:
+1. Save this file as 2e.ts
+2. Compile it using:  tsc 2e.ts
+3. Run using:         node 2e.js
+
+Output:
+Namespace Add: 15
+Namespace Subtract: 5
+*/
+
